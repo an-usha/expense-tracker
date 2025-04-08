@@ -12,9 +12,9 @@ const Navbar = () => {
             <li className={location.pathname ==="/"? "active" : ""}>
                 <Link to={'/'}>Dashboard</Link>
             </li>
-            <li className={location.pathname ==="/add"? "active" : ""}>
+            {/* <li className={location.pathname ==="/add"? "active" : ""}>
                 <Link to={'/add'}>Add Transaction</Link>
-            </li>
+            </li> */}
             <li className={location.pathname ==="/transaction"? "active" : ""}>
                 <Link to={'/transaction'}>Transaction</Link>
             </li>
