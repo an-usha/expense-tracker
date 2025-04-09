@@ -13,6 +13,11 @@
     font-weight: bold;
 }
 
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
 .nav-links{
     text-decoration: none;
     display: flex;
@@ -32,5 +37,5 @@
 
 .nav-links li a{
     text-decoration: none;
-    color: black;;
+    color: black;
 }

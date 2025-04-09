@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { MdOutlineCurrencyRupee } from "react-icons/md";
+
 
 const RecentTransaction = ({transaction}) => {
   return (
     <div>
-        <h2>Recent Transaction</h2>
-        <div>
             <ul>
             {transaction.slice(-10).reverse().map((tx,i) =>(
                 <li key={i} className='transaction-item'>
@@ -13,12 +13,11 @@ const RecentTransaction = ({transaction}) => {
                     </span>
                     <span className={`transaction-amount 
                         ${tx.type === "Income" ? 'income' : 'expense'}`}>
-                        {tx.amount.toLocaleString()}
+                        <MdOutlineCurrencyRupee/>{tx.amount.toLocaleString()}
                     </span>
                 </li>
             ))}
             </ul>
-        </div>
     </div>
   )
 }

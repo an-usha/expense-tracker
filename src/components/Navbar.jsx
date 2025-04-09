@@ -7,7 +7,11 @@ const Navbar = () => {
 
   return (
     <nav className='navbar'>
-        <h1 className='logo'>Expense Tracker</h1>
+        <span className={location.pathname ==="/"? "active" : ""}>
+        <h1 className='logo'>
+                <Link to={'/'}>Expense Tracker</Link>
+        </h1>
+            </span>
         <ul className='nav-links'>
             <li className={location.pathname ==="/"? "active" : ""}>
                 <Link to={'/'}>Dashboard</Link>
@@ -20,9 +24,6 @@ const Navbar = () => {
             </li>
             <li className={location.pathname ==="/report"? "active" : ""}>
                 <Link to={'/report'}>Reports</Link>
-            </li>
-            <li className={location.pathname ==="/"? "active" : ""}>
-                <Link to={'/'}>Reset</Link>
             </li>
         </ul>
     </nav>
