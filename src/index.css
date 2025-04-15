@@ -19,5 +19,9 @@ code {
 .expense {
   color: red;
   font-weight: 600;
+}
 
+.common-button{
+  color: #FFF;
+  background-color: #979BC7;
 }

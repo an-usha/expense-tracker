@@ -1,0 +1,13 @@
+.notfound-container{
+    margin: auto;
+    width: 50%;
+    padding: 10rem;
+    align-items: center;
+}
+
+.notfound{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dc3545;
+}

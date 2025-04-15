@@ -100,7 +100,7 @@ const AddTransaction = () => {
                 </select>
                 <textarea placeholder='Description' value={description} onChange={(e) => setDescription(e.target.value)}> </textarea>
                 <input type='date' value={date} onChange={(e) => setDate(e.target.value)}/>
-                <button  type='submit'> {editIndex === null ?  'Add Transaction' : 'Update Transaction'}</button>
+                <button  type='submit' className='common-button'> {editIndex === null ?  'Add Transaction' : 'Update Transaction'}</button>
             </div>
         </form>
     </div>

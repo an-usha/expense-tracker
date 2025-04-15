@@ -108,7 +108,7 @@ const Dashboard = () => {
     <div className='dashboard'>
       <div className='dashboard-inner'>
         <h2>Dashboard</h2>
-        <button className='add-transaction'>
+        <button className='add-transaction common-button'>
           <Link to={'/add'}>Add Transaction</Link>
         </button>
       </div>
